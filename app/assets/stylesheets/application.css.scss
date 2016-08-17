@@ -1,0 +1,145 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require font-awesome
+ *= require_tree .
+ *= require_self
+ */
+ /* 
+10px = 0.625rem
+12px = 0.75rem
+14px = 0.875rem
+16px = 1rem (base)
+18px = 1.125rem
+20px = 1.25rem
+24px = 1.5rem
+30px = 1.875rem
+32px = 2rem
+*/
+
+@import 'normalize';
+@import "font-awesome";
+
+$dark: #424652;
+$light: #9a9da4;
+$highlight: #8bc6db;
+$border: #E9E9E9;
+
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li{
+	color:$dark;
+}
+h1{
+	font-size: 2.5rem;
+}
+h2{
+	font-size: 2rem;
+}
+h3{
+	font-size: 1.75rem;
+}
+h4{
+	font-size: 1.375rem;
+}
+h5{
+	font-size: 1.25rem;
+}
+h6{
+	font-size: 1rem;
+}
+
+p, li {
+	font-size: 1.1rem;
+	line-height: 1.75rem;
+}
+p,ul,ol{
+	margin: 0 0 1.6em 0;
+}
+
+
+.wrapper{
+	width: 90%;
+	margin:0 auto;
+}
+.wrapper_padding{
+	padding: 4rem 0;
+	 
+}
+
+*{
+	box-sizing: border-box;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display:table;
+}
+.clearfix:after{
+	clear:both;
+}
+
+
+#main_navigation{
+	padding: 2.5em 5%;
+	border-bottom: 1px solid $border; 
+	.name{
+		font-weight: 700;
+		font-size: .7em;
+		letter-spacing: 4px;
+		word-spacing: 7px;
+		text-transform: uppercase;
+		border:2px solid $border;
+		padding: 0.8rem 1rem;
+		text-decoration: none;
+		color: $dark;
+		float:left;
+	}
+	nav {
+		float:right;
+		padding-top: 0.7rem;
+		a{
+			color:dark;
+			text-decoration: none;
+			margin:0 1rem;
+			font-size:  1rem;
+		}
+	}
+}
+#main_footer{
+	padding: 2.5em 5%;
+	margin-top:2.5rem;
+	border-top: 1px solid $border;
+	float:bottom; 
+	
+	.copyright{
+		float:left;
+		margin-top: 2.5rems;
+	}
+	nav{
+		float: right;
+		i{
+			margin-left:2rem;
+			color: $dark;
+			transition: all .2s ease;
+			&:hover{
+				color: $highlight;
+			}  
+		}
+	}
+}
+
+@import 'welcome';
