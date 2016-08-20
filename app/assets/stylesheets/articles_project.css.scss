@@ -19,3 +19,42 @@ $border: #E9E9E9;
 		
 	}
 }
+
+#post_show_content{
+	header{
+		text-align: center;
+		padding-top:3em;	
+	}
+	hr{
+		margin: 0 auto;
+	}
+}
+#content{
+	h2{
+		text-align: center;
+	}
+}
+
+#share_box{
+	text-align: center;
+	p{
+		padding: 0 0 1em 0;
+		margin:0;
+		font-weight: 700;
+		text-transform: uppercase;
+		color:$dark;
+		font-size: .8em;
+	}
+	i{
+		margin:auto;
+		padding:1em 1.5em;
+		&:hover{
+			color:$highlight;
+			cursor: pointer;		
+		}
+		
+	}
+}
+.share_box_padding{
+	padding: 2em 2em;
+}

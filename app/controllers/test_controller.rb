@@ -8,4 +8,10 @@ class TestController < ApplicationController
 	def articles
 
 	end
+	def contact
+
+	end
+	def show
+		
+	end
 end
