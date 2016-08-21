@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   resources :test
   resources :posts
-  root 'test#index'
+  get 'welcome/index'
+  root 'welcome#index'
   get '/index', to: 'test#index'
   get '/articles', to: 'test#articles'
   get '/contact', to: 'test#contact'

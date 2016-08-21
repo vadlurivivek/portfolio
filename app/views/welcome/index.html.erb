@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ascardi wall - Part Designer, Part Developer</title>
+	</head>
+	<body>
+		<div class="wrapper wrapper_padding clearfix">
+			<div class="col-1 about homepage_content">
+				<h2>About</h2>
+				<hr>
+				<p>I’m a designer &amp; developer living in IIT MANDI</p>
+				<p>Small batch 8-bit tilde letterpress, salvia literally readymade lomo man bun meggings leggings brunch meditation. <a href="#">Biodiesel</a> </p>
+				<p>meh freegan food truck, chia bicycle rights actually. Sustainable fap portland man bun pug, raw denim vegan tattooed plaid distillery celiac. Gentrify organic hoodie, shoreditch <a  href="#">mixtape</a> biodiesel pork belly direct trade humblebrag </p>
+				<p>meh freegan food truck, chia bicycle rights actually. Sustainable fap portland man bun pug, raw denim vegan tattooed plaid distillery celiac. Gentrify organic hoodie, shoreditch <a  href="#">mixtape</a> biodiesel pork belly direct trade humblebrag </p>
+
+				
+			</div>
+			<div class="col-2 homepage_content">
+				<h2>Stuff I've Written</h2>
+				<hr>
+				<% @posts.each do |post|%>
+					<h3><a href="#"><%= link_to post.title,post %></a></h3>
+					<p class="date"><%= post.created_at.strftime("%A,%b %d") %></p>
+				<%end%>
+			</div>
+			<div class="col-3 homepage_content">
+				<h2>Stuff I've Built</h2>
+				<hr>
+				
+				<h3><a href="#">Budget APP</a></h3>
+				<p class="date">Friday April 10th</p>
+				
+				<h3><a href="#">Pin Board with ruby on rails</a></h3>
+				<p class="date">Friday April 10th</p>
+				
+				<h3><a href="#">Portfolio blog</a></h3>
+				<p class="date">Friday April 10th</p>
+
+				<h3><a href="#">Hey you blog</a></h3>
+				<p class="date">Friday April 10th</p>
+
+				<h3><a href="#">I just met you blog</a></h3>
+				<p class="date">Friday April 10th</p>
+
+				<h3><a href="#">This is crazy blog</a></h3>
+				<p class="date">Friday April 10th</p>
+			</div>
+		</div>
+	</body>
+</html>
