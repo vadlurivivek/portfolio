@@ -223,6 +223,43 @@ input[type="submit"],.button{
 	}
 }
 
+.Edit_header{
+	text-align: center;
+}
+
+
+
+.pagination {
+	text-align: center;
+	margin: 0 0 3em 0;
+	a, .previous_page, .current, .next_page {
+		padding: .75em 1em;
+		margin: 0 .5em;
+		border-radius: .15em;
+		line-height: 20px;
+		text-decoration: none;
+		background: #ffffff;
+		font-weight: 700;
+		font-size: .7em;
+		font-style: normal;
+		color: $dark;
+		&:hover {
+			background: $highlight;
+			color: #ffffff;
+		}
+	}
+	.current {
+		background: $highlight;
+		color: #ffffff;
+	}
+	.disabled {
+		color: #C0C0C0;
+		&:hover {
+			color: #C0C0C0;
+			background: #ffffff;
+		}
+	}
+}
 
 @import 'welcome';
 
