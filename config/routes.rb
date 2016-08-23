@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :test
   resources :posts
+  resources :projects
   get 'welcome/index'
   root 'welcome#index'
   get '/index', to: 'test#index'

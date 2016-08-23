@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ascardi wall - Part Designer, Part Developer</title>
+	</head>
+	<body>
+		<h1 id="page_title">Stuff I've Made</h1>
+		<div id="posts_wrapper" class="skinny_wrapper">
+			
+			<% @projects.each do |project|%>
+				<div class="post">
+				<p class="date"><%= project.created_at.strftime('%A, %B %d') %></p>
+				<h2><a href="#" ><%= link_to project.title, project%></a></h2>
+				<hr>
+			</div>		
+			<%end%>
+			<%= will_paginate @projects %>
+		</div>
+	</body>
+</html>

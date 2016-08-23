@@ -142,13 +142,12 @@ hr{
 			float:right;
 			padding-top: 1.1rem;
 			a{
-				color:dark;
+				color:$dark;
 				text-decoration: none;
 				margin:0 1rem;
 				font-size:  1rem;
 			}
-		}
-		
+		}		
 }
 	
 #page_title{
@@ -223,7 +222,28 @@ input[type="submit"],.button{
 	}
 }
 
-.Edit_header{
+.project_button{
+	background: $highlight;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 1em 2em;
+	margin: 0 auto;
+	border-radius:0.4em;
+
+}
+.wrapper_button_padding{
+	padding:1em;
+	margin:2em 0 0 0;
+	text-align: center;
+	a{
+		color: #ffffff;
+		&:hover{
+			color: #ffffff;
+		}
+	}
+}
+
+.edit_new_header{
 	text-align: center;
 }
 
